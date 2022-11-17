@@ -1,0 +1,254 @@
+/* general */
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.app {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+img {
+  object-fit: contain;
+}
+
+/* layout */
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.container-wide {
+  max-width: 170rem;
+  margin: 0 auto;
+  padding-inline: 2.4rem;
+}
+
+.page-padding {
+  padding-block: 8rem;
+}
+
+/* utils */
+
+.padding-top-small {
+  padding-block-start: 1.6rem;
+}
+
+.padding-top-medium {
+  padding-block-start: 3.6rem;
+}
+
+.padding-top-large {
+  padding-block-start: 6.4rem;
+}
+
+/* text */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 5.2rem;
+}
+
+h2 {
+  font-size: 4.4rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+//noinspection ALL
+.gradient-text {
+  background-image: var(--gradient-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+  &::selection {
+    text-fill-color: var(--color-primary);
+    -webkit-text-fill-color: var(--color-primary);
+    -moz-text-fill-color: var(--color-primary);
+  }
+}
+
+/* anchor */
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.a-btn {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  color: var(--color-text);
+  padding: 0.8rem 1.2rem;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: var(--border-radius-small);
+}
+
+.a-inline,
+.a-inline:visited,
+.a-inline:active {
+  color: var(--color-text);
+  font-size: 2rem;
+}
+
+.a-inline:hover,
+.a-inline:focus {
+  text-decoration: underline;
+}
+
+/* button */
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 2rem;
+  color: var(--color-text);
+  font-weight: 700;
+
+  padding: 0.8rem 3.2rem;
+  border-radius: var(--border-radius-small);
+  cursor: pointer;
+}
+
+button:disabled {
+  color: var(--color-gray-30);
+  background-color: var(--color-gray-70);
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  color: var(--color-gray-30);
+  background-color: var(--color-gray-70);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-gray-95);
+}
+
+
+input {
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--border-radius-medium);
+  background-color: var(--color-bg);
+
+  color: var(--color-text);
+  font-family: "Yekan Bakh", sans-serif;
+  font-size: 2rem;
+
+  border: 2px solid var(--color-line);
+  outline: none;
+
+}
+
+input::placeholder {
+  color: var(--color-line-dark);
+}
+
+input:focus,
+input.invalid-input:focus {
+  color: var(--color-text);
+  border: 2px solid var(--color-text);
+}
+
+/* media query */
+@media screen and (max-width: 1550px) {
+  .hide-1550 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hide-1350 {
+    display: none;
+  }
+
+  .page-padding {
+    padding-block: 9.6rem;
+  }
+
+  .input__info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .hide-950 {
+    display: none;
+  }
+
+  .form__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hide-400 {
+    display: none;
+  }
+}
