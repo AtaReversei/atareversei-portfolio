@@ -1,0 +1,78 @@
+:root {
+    --color-gray-100: hsl(0deg 0% 100%);
+    --color-gray-95: hsl(0deg 0% 95%);
+    --color-gray-90: hsl(0deg 0% 90%);
+    --color-gray-80: hsl(0deg 0% 80%);
+    --color-gray-70: hsl(0deg 0% 70%);
+    --color-gray-60: hsl(0deg 0% 60%);
+    --color-gray-50: hsl(0deg 0% 50%);
+    --color-gray-40: hsl(0deg 0% 40%);
+    --color-gray-30: hsl(0deg 0% 30%);
+    --color-gray-20: hsl(0deg 0% 20%);
+    --color-gray-15: hsl(0deg 0% 15%);
+    --color-gray-10: hsl(0deg 0% 10%);
+    --color-gray-5: hsl(0deg 0% 5%);
+
+
+    --color-primary-dark: var(--color-gray-5);
+    --color-primary: var(--color-gray-10);
+    --color-primary-light: var(--color-gray-15);
+
+    --color-secondary-darker: hsl(34, 56%, 48%);
+    --color-secondary-dark: hsl(39, 51%, 53%);
+    --color-secondary: hsl(44, 46%, 58%);
+    --color-secondary-light: hsl(49, 41%, 63%);
+    --color-secondary-lighter: hsl(54, 36%, 68%);
+
+    --color-bg-dark: var(--color-primary-dark);
+    --color-bg: var(--color-primary);
+    --color-line-dark: var(--color-gray-20);
+    --color-line: var(--color-gray-30);
+    --color-line-light: var(--color-gray-40);
+    --color-text-dark: var(--color-gray-80);
+    --color-text: var(--color-gray-90);
+
+    --color-success-dark: hsl(161, 94%, 30%);
+    --color-success: hsl(160, 84%, 39%);
+    --color-success-light: hsl(158, 64%, 52%);
+
+    --color-error-dark: hsl(0, 72%, 51%);
+    --color-error: hsl(0, 84%, 60%);
+    --color-error-light: hsl(0, 91%, 71%);
+
+    --color-warning-dark: var(--color-secondary);
+    --color-warning: var(--color-secondary-light);
+    --color-warning-light: var(--color-secondary-lighter);
+
+    --gradient-secondary: linear-gradient(to top right, var(--color-secondary-darker), var(--color-secondary-lighter));
+    --gradient-error: linear-gradient(to top right, var(--color-error-dark), var(--color-error-light));
+
+    --box-shadow: 0 8px 16px hsl(228deg, 100%, 25%, 0.15);
+    --box-shadow-light: 0 8px 16px hsl(228deg, 100%, 25%, 0.05);
+    --box-shadow-lighter: 0 8px 16px hsl(228deg, 100%, 25%, 0.02);
+    --box-shadow-left-dark: -8px 0 32px hsl(228deg, 100%, 25%, 0.25);
+
+    --border-radius-small: 0.4rem;
+    --border-radius-medium: 0.8rem;
+    --border-radius-large: 1.2rem;
+
+    --dot-size: 1px;
+    --dot-space: 50px;
+}
+
+[data-theme='dark'] {
+    /*--color-bg: var(--color-gray-15);*/
+    /*--color-bg-dark: var(--color-gray-10);*/
+    /*--color-line-light: var(--color-gray-20);*/
+    /*--color-line: var(--color-gray-30);*/
+    /*--color-line-dark: var(--color-gray-40);*/
+    /*--color-text: var(--color-gray-95);*/
+    /*--color-text-light: var(--color-gray-80);*/
+    /*--color-text-lighter: var(--color-gray-60);*/
+    /*--color-error: var(--color-error-light);*/
+    /*--box-shadow: none;*/
+    /*--box-shadow-light: none;*/
+    /*--box-shadow-lighter: none;*/
+    /*--box-shadow-left-dark: none;*/
+    /*--color-primary: var(--color-primary-light);*/
+}
