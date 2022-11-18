@@ -24,6 +24,8 @@
     --color-secondary-light: hsl(49, 41%, 63%);
     --color-secondary-lighter: hsl(54, 36%, 68%);
 
+    --color-secondary-hsl: 44, 46%, 58%;
+
     --color-bg-dark: var(--color-primary-dark);
     --color-bg: var(--color-primary);
     --color-line-dark: var(--color-gray-20);

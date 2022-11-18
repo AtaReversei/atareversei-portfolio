@@ -5,8 +5,18 @@ const Hero = () => {
         <section className="hero">
             <div className="hero__container container-wide">
                 <div className="hero__text">
-                    <p>Hi there, I'm Ata! or</p>
-                    <h1 className="hero__title gradient-text">@atareversei</h1>
+                    <h1 className="hero__title">Hi there,<br/> I'm <span className="gradient-text">Ata!&nbsp;</span>
+                    </h1>
+                    <div className="hero__paragraphs">
+                        <p>I love all things application and this has taken me on so many different journeys. From
+                            graphic design to backend development.</p>
+                        <p>I would love to show you my crafts and see if I can help you and your business with my
+                            skills.</p>
+                    </div>
+                    <button className="btn-primary">See Works</button>
+                </div>
+                <div className="hero__visual-support">
+
                 </div>
             </div>
         </section>
