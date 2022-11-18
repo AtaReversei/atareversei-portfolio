@@ -5,6 +5,26 @@
 }
 
 * {
+  // Firefox
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bg-lighter) var(--color-bg-dark);
+}
+
+*::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-bg-lighter);
+}
+
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,7 +78,11 @@ img {
 }
 
 .padding-top-large {
-  padding-block-start: 6.4rem;
+  padding-block-start: 6.2rem;
+}
+
+.padding-top-section {
+  padding-block-start: 12.8rem;
 }
 
 /* text */
