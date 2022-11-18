@@ -6,7 +6,7 @@ const Skills = () => {
     return (
         <section className="container padding-top-section">
             <h2 className="gradient-text">
-                My Skills
+                About Me
             </h2>
             <p>
                 Drag and scroll to see more!
