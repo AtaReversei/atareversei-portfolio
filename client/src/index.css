@@ -17,6 +17,7 @@
     --color-primary-dark: var(--color-gray-5);
     --color-primary: var(--color-gray-10);
     --color-primary-light: var(--color-gray-15);
+    --color-primary-lighter: var(--color-gray-20);
 
     --color-secondary-darker: hsl(34, 56%, 48%);
     --color-secondary-dark: hsl(39, 51%, 53%);
@@ -24,8 +25,12 @@
     --color-secondary-light: hsl(49, 41%, 63%);
     --color-secondary-lighter: hsl(54, 36%, 68%);
 
+    --color-secondary-hsl: 44, 46%, 58%;
+
     --color-bg-dark: var(--color-primary-dark);
     --color-bg: var(--color-primary);
+    --color-bg-light: var(--color-primary-light);
+    --color-bg-lighter: var(--color-primary-lighter);
     --color-line-dark: var(--color-gray-20);
     --color-line: var(--color-gray-30);
     --color-line-light: var(--color-gray-40);
