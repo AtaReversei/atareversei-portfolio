@@ -5,11 +5,14 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(14, 9rem);
+    grid-template-columns: repeat(28, 9rem);
     grid-template-rows: repeat(6, 9rem);
     row-gap: 1.6rem;
     column-gap: 1.6rem;
     cursor: grab;
+    padding-block: 4.4rem;
+    border-inline: 1px solid var(--color-bg-light);
+    padding-inline: 1.6rem;
 
     &-on-drag {
       cursor: grabbing;
@@ -37,6 +40,10 @@
 
   &__design-box- {
 
+    &0 {
+      // empty
+    }
+
     &1 {
       background-image: var(--gradient-secondary);
       border-radius: var(--border-radius-medium);
@@ -48,7 +55,19 @@
     }
 
     &3 {
+      display: grid;
+      place-items: center;
+      font-family: 'Anonymous Pro', monospace;
+      line-height: 1;
+      color: var(--color-bg-lighter);
+    }
 
+    &4 {
+      color: var(--color-bg-lighter);
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding-inline-start: 0.8rem;
     }
   }
 }
@@ -154,6 +173,45 @@
     // react tech 4
     grid-column: 9 / 10;
     grid-row: 6 / 7;
+  }
+
+  &18 {
+    // down right arrow
+    grid-column: 9 / 10;
+    grid-row: 2 / 3;
+  }
+
+  &19 {
+    // commit title
+    grid-column: 10 / 14;
+    grid-row: 1 / 2;
+    text-align: end;
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  &20 {
+    // empty space react
+    grid-column: 10 / 12;
+    grid-row: 2 / 3;
+  }
+
+  &21 {
+    // git div
+    grid-column: 12 / 13;
+    grid-row: 2 / 3;
+  }
+
+  &22 {
+    // github div
+    grid-column: 13 / 14;
+    grid-row: 2 / 3;
+  }
+
+  &23 {
+    // picture div
+    grid-column: 11 / 15;
+    grid-row: 3 / 6;
   }
 
 }
