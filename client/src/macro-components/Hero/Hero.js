@@ -1,4 +1,5 @@
 import './hero.scss'
+import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
     return (
@@ -16,7 +17,7 @@ const Hero = () => {
                     <button className="btn-primary">See Works</button>
                 </div>
                 <div className="hero__visual-support">
-
+                    <Spline scene="https://prod.spline.design/trKuOlQOPDrJX7tQ/scene.splinecode" />
                 </div>
             </div>
         </section>

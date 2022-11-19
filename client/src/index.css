@@ -49,7 +49,10 @@
     --color-warning: var(--color-secondary-light);
     --color-warning-light: var(--color-secondary-lighter);
 
+    --gradient-primary: linear-gradient(to top right, var(--color-primary-dark), var(--color-primary-light));
+    --gradient-primary-reverse: linear-gradient(to bottom left, var(--color-primary-dark), var(--color-primary-light));
     --gradient-secondary: linear-gradient(to top right, var(--color-secondary-darker), var(--color-secondary-lighter));
+    --gradient-secondary-reverse: linear-gradient(to bottom left, var(--color-secondary-darker), var(--color-secondary-lighter));
     --gradient-error: linear-gradient(to top right, var(--color-error-dark), var(--color-error-light));
 
     --box-shadow: 0 8px 16px hsl(228deg, 100%, 25%, 0.15);
