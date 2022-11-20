@@ -5,7 +5,7 @@
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(28, 9rem);
+    grid-template-columns: repeat(16, 9rem);
     grid-template-rows: repeat(6, 9rem);
     row-gap: 1.6rem;
     column-gap: 1.6rem;
@@ -107,6 +107,8 @@
     // design box
     grid-column: 5 / 8;
     grid-row: 6 / 7;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
   }
 
   &7 {
@@ -165,13 +167,13 @@
 
   &16 {
     // react tech 3
-    grid-column: 8 / 9;
-    grid-row: 6 / 7;
+    grid-column: 10 / 11;
+    grid-row: 5 / 6;
   }
 
   &17 {
     // react tech 4
-    grid-column: 9 / 10;
+    grid-column: 8 / 9;
     grid-row: 6 / 7;
   }
 
@@ -212,6 +214,46 @@
     // picture div
     grid-column: 11 / 15;
     grid-row: 3 / 6;
+  }
+
+  &24 {
+    // my react toolkit title
+    grid-column: 9 / 11;
+    grid-row: 6 / 7;
+  }
+
+  &25 {
+    // love for epic react
+    grid-column: 11 / 12;
+    grid-row: 6 / 7;
+    display: grid;
+    place-items: center;
+  }
+
+  &26 {
+    // photoshop
+    grid-column: 12 / 13;
+    grid-row: 6 / 7;
+  }
+
+  &27 {
+    // illustrator
+    grid-column: 13 / 14;
+    grid-row: 6 / 7;
+  }
+
+  &28 {
+    // figma
+    grid-column: 14 / 15;
+    grid-row: 6 / 7;
+  }
+
+  &29 {
+    // commit heat map
+    grid-column: 14 / 17;
+    grid-row: 1 / 2;
+    display: grid;
+    place-items: center;
   }
 
 }
